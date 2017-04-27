@@ -2,6 +2,7 @@
 
 package ru.example.checklist;
 
+import android.content.*;
 import android.os.*;
 import android.support.design.widget.*;
 import android.support.v4.view.*;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 		
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        setTheme(R.style.AppDefault);
+        setTheme(R.style.AppDark);
         super.onCreate(savedInstanceState);
         setContentView(LAYOUT);
 
@@ -41,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
 		public void onStartBasicActivity(View view) {
         Toast.makeText(this, "tap float button", Toast.LENGTH_SHORT).show();
-        
+        Intent intent = new Intent(this,ActivityDark.class);
+				startActivity(intent);
     }
 		
 		
