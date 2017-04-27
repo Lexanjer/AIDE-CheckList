@@ -50,8 +50,12 @@
             android:layout_gravity="end|bottom"
             android:layout_marginBottom="@dimen/fab_margin"
             android:layout_marginRight="@dimen/fab_margin"
+						android:clickable="true"
+						android:onClick="onStartBasicActivity"
+						
             app:backgroundTint="@color/colorPrimary"/>
 
+											
     </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView

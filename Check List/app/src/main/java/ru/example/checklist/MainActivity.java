@@ -9,7 +9,10 @@ import android.support.v4.widget.*;
 import android.support.v7.app.*;
 import android.support.v7.widget.*;
 import android.view.*;
+import android.widget.*;
 import java.util.*;
+
+import android.support.v7.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
         DataBase dataBase = new DataBase(this);
     }
 
+		public void onStartBasicActivity(View view) {
+        Toast.makeText(this, "tap float button", Toast.LENGTH_SHORT).show();
+        
+    }
+		
+		
     private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.app_name);
