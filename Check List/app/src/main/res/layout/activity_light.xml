@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/rootLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainBackground"
+    android:background="@color/mainBackgroundLight"
     android:fitsSystemWindows="true">
 
 
     <android.support.design.widget.CoordinatorLayout
 
-        android:id="@+id/coordl1"
+        android:id="@+id/coord1"
 
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:background="@drawable/roundrect_layout" />
+						
+            android:background="@drawable/roundrect_layout_light" />
 
 
 
         <android.support.design.widget.CoordinatorLayout
-            android:id="@+id/coordl2"
+            android:id="@+id/coord2"
             android:paddingTop="1dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/roundrect">
+            android:background="@drawable/roundrect_light">
 
 
             <ImageView
@@ -37,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:background="@drawable/ic_background" />
+								android:background="@mipmap/ic_background" />
 
             <android.support.design.widget.AppBarLayout
 
@@ -46,7 +47,7 @@
                 android:layout_height="wrap_content">
 
                 <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
+                    android:id="@+id/toolBar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     android:background="?attr/colorPrimary"
@@ -68,7 +69,8 @@
                     android:id="@+id/titleStrip"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/roundrect_pager"
+                    android:background="@drawable/roundrect_pager_light"
+
                     android:elevation="3dp" />
 
             </android.support.v4.view.ViewPager>
@@ -79,11 +81,11 @@
     </android.support.design.widget.CoordinatorLayout>
 
     <android.support.design.widget.NavigationView
-        android:id="@+id/navigation"
+        android:id="@+id/navigationView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/mainBackground"
+        android:background="@color/mainBackgroundLight"
 
         >
 
